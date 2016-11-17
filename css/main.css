@@ -17,18 +17,61 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
+img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 25em) {
+
+  img {
+    display: inline-block;
+  }
+
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 49%;
+  }
+
+  img:first-child,
+  img:nth-child(2) {
+    width: 49%;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  img {
+    display: inline-block;
+  }
+
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 32%;
+
+  }
+
+  img:first-child {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  img {
+    display: inline-block;
+  }
+
+  img:first-child {
+    width: 23%;
+  }
+
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 23%;
+  }
 
 }
